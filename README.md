@@ -1,34 +1,57 @@
-------------------------------- Horas Gastas nesse codigo: 9 horas ---------------------------------
+# 🚀 Asteroids Game – Java 2D (Pure Java, OOP)
 
-Quando eu comecei esse codigo apenas Deus e eu sabiamos o que estava acontecendo
-agora depois de aproximadamente 9 horas seguidas codando e mais umas arrumando bug, apenas Deus sabe o que esta acontecendo
-caso alguem for maluco de mexer nesse codigo (isso é um aviso pro eu do futuro), não façam isso.
+A classic Asteroids-style 2D arcade game built entirely in **pure Java**, without using any external game engines.
 
-------------------------------- VERSÃO -------------------------------
+This project was developed to deepen understanding of object-oriented programming, real-time game loops, collision detection, and event-driven input handling.
 
-VERSÂO: 1.0.1
-Jar agora funciona corretamente
+---
 
-------------------------------- Controles -------------------------------
+## 🎮 Features
 
-Utilize o W para acelarar
-Utilize A ou D para girar a nave
-O tiro é automatico
+- Player-controlled spaceship (keyboard input)
+- Real-time game loop
+- Asteroid spawning and movement
+- Collision detection system
+- Score tracking
+- Game over state
+- Object-oriented architecture
 
-------------------------------- Score -------------------------------
+---
 
-Cada asteroid vale 10 pontos
-O jogo demora 60 Segundos
+## 🧠 Technical Concepts Demonstrated
 
-------------------------------- Atualizações -------------------------------
+This project demonstrates solid understanding of:
 
-Jar agora funciona corretamente se o computador tiver JAVA SDK 
-Proximas atualizações: melhoria dos asteroids, adicionar menu iniciar e combustivel que aumenta o tempo
+- Object-Oriented Programming (OOP)
+- Encapsulation and class responsibility
+- Game loop architecture
+- Real-time rendering
+- Collision detection algorithms
+- Event-driven programming
+- Separation of concerns
 
+---
 
-IMPORTANTE!!!
+## 🏗 Architecture Overview
 
-So utilize o botão de reiniciar se o jogo acabar
-se não ele buga inteiro. 
+The project follows a modular structure:
 
-Se o jogo ficar lento, abre e fecha dnovo ou mata a nava e reinicia
+- **Main/Game class** → Responsible for game initialization and loop control  
+- **Player class** → Spaceship logic and movement  
+- **Asteroid class** → Asteroid behavior and physics  
+- **Collision system** → Hit detection logic  
+- **Score/Game State management**
+
+Each class has a single responsibility, ensuring maintainability and scalability.
+
+---
+
+## 🛠 Technologies Used
+
+- Java
+- Java AWT / Swing (2D rendering)
+- OOP principles
+
+No external frameworks or engines were used.
+
+---
