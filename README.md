@@ -1,57 +1,57 @@
-# 🚀 Asteroids Game – Java 2D (Pure Java, OOP)
+# Asteroids — Java
 
-A classic Asteroids-style 2D arcade game built entirely in **pure Java**, without using any external game engines.
-
-This project was developed to deepen understanding of object-oriented programming, real-time game loops, collision detection, and event-driven input handling.
+A faithful recreation of the classic Asteroids arcade game in Java, built with a custom game loop, real-time collision detection, and object-oriented design.
 
 ---
 
-## 🎮 Features
+## Gameplay
 
-- Player-controlled spaceship (keyboard input)
-- Real-time game loop
-- Asteroid spawning and movement
-- Collision detection system
-- Score tracking
-- Game over state
-- Object-oriented architecture
+- Control a spaceship and destroy asteroids before they hit you
+- Asteroids split into smaller pieces when shot
+- Game speed increases progressively
+- Score tracking and lives system
 
 ---
 
-## 🧠 Technical Concepts Demonstrated
+## Tech Stack
 
-This project demonstrates solid understanding of:
-
-- Object-Oriented Programming (OOP)
-- Encapsulation and class responsibility
-- Game loop architecture
-- Real-time rendering
-- Collision detection algorithms
-- Event-driven programming
-- Separation of concerns
+| Layer | Technology |
+|---|---|
+| Language | Java 21 |
+| Rendering | JavaFX / Java2D |
+| Architecture | OOP — each entity is its own class |
+| Build | Maven |
 
 ---
 
-## 🏗 Architecture Overview
+## Architecture
 
-The project follows a modular structure:
+Each game entity is an independent object responsible for its own state and rendering:
 
-- **Main/Game class** → Responsible for game initialization and loop control  
-- **Player class** → Spaceship logic and movement  
-- **Asteroid class** → Asteroid behavior and physics  
-- **Collision system** → Hit detection logic  
-- **Score/Game State management**
+```
+GameLoop
+  ├── Spaceship     → player movement, rotation, shooting
+  ├── Asteroid[]    → movement, size variants, split logic
+  ├── Bullet[]      → trajectory, lifetime, collision
+  └── CollisionManager → detects hits between all entities
+```
 
-Each class has a single responsibility, ensuring maintainability and scalability.
+The game loop runs on a fixed timestep, separating update logic from rendering — which keeps physics consistent regardless of frame rate.
+
+---
+
+## Running Locally
+
+**Requirements:** Java 21+, Maven 3.8+
+
+```bash
+git clone https://github.com/cherohn/Asteroids-Java.git
+cd Asteroids-Java
+mvn clean compile exec:java
+```
 
 ---
 
-## 🛠 Technologies Used
+## Author
 
-- Java
-- Java AWT / Swing (2D rendering)
-- OOP principles
-
-No external frameworks or engines were used.
-
----
+**Matheus Garcez** — [github.com/cherohn](https://github.com/cherohn)
